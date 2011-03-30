@@ -29,7 +29,9 @@ test:
 
 production:
   adapter: mysql
-  database: catlindesign_production
-  username: root
-  password: 
-  socket: /var/run/mysqld/mysqld.sock
+  database: txtgasm
+  host: txtgasm.cfwpo8uqtuve.us-east-1.rds.amazonaws.com
+  username: hcatlin
+  password: mohawk1982
+  pool: 5
+  timeout: 5000
