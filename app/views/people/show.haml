@@ -1,0 +1,11 @@
+%h2 Our Staff
+
+%h3= @person.name
+%h4= @person.position
+
+- if @person.started_on < 1.year.ago.to_date
+  %p
+    with the firm for 
+    = distance_of_time_in_words_to_now(@person.started_on)
+
+= markdown(@person.bio)

@@ -1,0 +1,52 @@
+8
+
+dir
+20
+svn://svn.unspace.ca/catlindesign/trunk/app/views/people
+svn://svn.unspace.ca/catlindesign
+
+
+
+2007-09-04T18:03:57.942953Z
+12
+hcatlin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+471add9a-5435-0410-8ab9-8ddd3e737e4a
+
+show.haml
+file
+
+
+
+
+2008-01-16T17:15:18.000000Z
+f1dcf5a2f0efe903a7deed42d48cdc42
+2007-09-04T17:49:35.449444Z
+11
+hcatlin
+
+_person.haml
+file
+
+
+
+
+2008-01-16T17:15:18.000000Z
+f3db6d9ca927f1952bc653470604206e
+2007-09-04T18:03:57.942953Z
+12
+hcatlin
+

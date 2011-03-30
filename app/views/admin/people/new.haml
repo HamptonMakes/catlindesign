@@ -1,0 +1,10 @@
+%h1 New Person
+
+= error_messages_for :person
+
+- form_tag(admin_people_path) do
+  = render :partial => "form"
+  %p
+    = submit_tag "Create"
+
+= link_to 'Back', admin_people_path 

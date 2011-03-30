@@ -1,0 +1,4 @@
+flickr_api:
+  cache_file:    /tmp/flickr.cache
+  key:           d1cfc452ab3efab33ef60087109b6d34
+  shared_secret: 69d8f600445f7499

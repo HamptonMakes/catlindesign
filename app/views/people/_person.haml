@@ -1,0 +1,5 @@
+%li
+  - if person.bio.length > 2
+    = link_to person.name, person
+  - else
+    = person.name

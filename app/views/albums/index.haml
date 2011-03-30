@@ -1,0 +1,9 @@
+%h2 Portfolio
+
+.albums
+  - @albums.each do |album|
+    .album
+      %a{:href => album_path(album.api_id)}
+        = image_tag album.photos.first.url("s")
+        %h4= album.title
+  .clear      

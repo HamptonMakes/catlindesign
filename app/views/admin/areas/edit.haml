@@ -1,0 +1,10 @@
+%h2 
+  Edit The Main Landing Page for the
+  = @area.name
+  Area
+- form_tag admin_area_path(@area), :method => :put do
+  ~ text_area :area, :body
+  %br/
+  %button{:type => "submit"} Save!
+  
+= link_to "back", admin_areas_path

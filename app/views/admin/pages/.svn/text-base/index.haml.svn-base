@@ -1,0 +1,17 @@
+%h1 
+  Listing pages in
+  = @area.name
+
+%table
+  %tr
+
+  - for page in @pages
+    %tr
+      %td= page.name
+      %td= link_to 'Show Public', [@area, page]
+      %td= link_to 'Edit', edit_admin_area_page_path(@area, page)  
+      %td= link_to 'Destroy', admin_area_page_path(@area, page), :confirm => 'Are you sure?', :method => :delete 
+
+%br/
+
+= link_to 'New page', new_admin_area_page_path

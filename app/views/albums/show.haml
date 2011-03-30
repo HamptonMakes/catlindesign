@@ -1,0 +1,30 @@
+%h2= @album.title
+
+%p
+  %a{:href => "/albums"} Back to the Portfolio
+
+- @album.photos.each do |photo|
+  %a{:href => photo.url, :title => photo.title, :rel => "lightbox"}
+    = image_tag photo.url("s")
+    
+%br/
+%p
+  %a{:href => "/albums"} Back to the Portfolio
+  
+<!-- Google Code for pageview Conversion Page -->
+<script language="JavaScript" type="text/javascript">
+<!--
+var google_conversion_id = 1072182929;
+var google_conversion_language = "en_US";
+var google_conversion_format = "1";
+var google_conversion_color = "FFFFFF";
+if (1) {var google_conversion_value = 1;}
+var google_conversion_label = "pageview";
+//-->
+</script>
+<script language="JavaScript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<img height=1 width=1 border=0 src="http://www.googleadservices.com/pagead/conversion/1072182929/imp.gif?value=1&label=pageview&script=0">
+</noscript>
+

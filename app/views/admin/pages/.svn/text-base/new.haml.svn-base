@@ -1,0 +1,9 @@
+%h1 New Page
+
+= error_messages_for :page
+
+- form_tag(admin_area_pages_path(@area)) do |f| 
+  = render :partial => "form"
+  %p= submit_tag "Create New Page"
+
+= link_to 'Back', admin_area_pages_path(@area)

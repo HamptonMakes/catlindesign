@@ -1,0 +1,13 @@
+%h1 Areas
+
+%table
+  %tr
+
+  - for area in @areas
+    %tr
+      %td= area.name
+      %td= link_to 'Show Public Side', [area, Page.new]
+      %td= link_to 'Edit Main Page', edit_admin_area_path(area)
+      %td= link_to 'Edit Sub Pages', admin_area_pages_path(area)
+
+%br/

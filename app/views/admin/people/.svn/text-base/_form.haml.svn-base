@@ -1,0 +1,21 @@
+.widget
+  %label Name
+  = text_field :person, :name
+
+.widget
+  %label Certifications
+  = text_field :person, :certifications
+  %br/
+  %small Stuff like "FASID" or "ASID"
+
+.widget
+  %label Position
+  = text_field :person, :position
+
+.widget
+  %label Biography
+  %p~ text_area :person, :bio
+
+.widget
+  %label Start Date
+  = date_select :person, :started_on, :start_year => 1980, :end_year => Time.now.year
