@@ -6,7 +6,13 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-$flickr = nil
+FLICKR_CONFIG = {
+  :api_key => "cc43605d0a9b0d5e1904ab802d77570d",
+  :secret  => "6ac30b5a6de741a6",
+  :frob    => "72157603732608197-6828ab3084b76942-318350",
+  :cache   => File.join(File.dirname(__FILE__), "flickr.cache")
+}
+$flickr = Flickr.new(FLICKR_CONFIG[:cache], FLICKR_CONFIG[:api_key], FLICKR_CONFIG[:secret])
 
 module Catlindesign
   class Application < Rails::Application
@@ -42,14 +48,5 @@ module Catlindesign
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    
-    
-    FLICKR_CONFIG = {
-      :api_key => "cc43605d0a9b0d5e1904ab802d77570d",
-      :secret  => "6ac30b5a6de741a6",
-      :frob    => "72157603732608197-6828ab3084b76942-318350",
-      :cache   => Rails.root + "/config/flickr.cache"
-    }
-    $flickr = Flickr.new(FLICKR_CONFIG[:cache], FLICKR_CONFIG[:api_key], FLICKR_CONFIG[:secret])
   end
 end

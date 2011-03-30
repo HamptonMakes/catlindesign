@@ -1,0 +1,162 @@
+h2 {
+  margin-top: 0;
+  color: #95a1aa; }
+
+p {
+  line-height: 17px; }
+
+a {
+  outline: none;
+  color: #bab2a7; }
+
+.clear {
+  clear: both; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 11px;
+  
+  color: #383c40;
+  background: #faf8f5 url(/images/bg.gif) repeat-y; }
+  body #page {
+    width: 760px; }
+    body #page #header {
+      width: 700px;
+      padding: 30px 30px 30px 25px;
+      background: #fff; }
+      body #page #header #logo {
+        float: left; }
+        body #page #header #logo h1 {
+          width: 208px;
+          height: 50px;
+          margin: 0;
+          background: url(/images/logo.gif) no-repeat;
+          text-indent: -9999px; }
+      body #page #header #nav {
+        float: right; }
+        body #page #header #nav .news {
+          float: left;
+          display: block;
+          width: 30px;
+          height: 44px;
+          padding-right: 10px;
+          background: url(/images/nav_news.gif) no-repeat;
+          border-right: 1px solid #e4ded4;
+          text-indent: -9999px; }
+        body #page #header #nav .aboutus {
+          float: left;
+          display: block;
+          width: 50px;
+          height: 44px;
+          padding-right: 10px;
+          margin-left: 10px;
+          background: url(/images/nav_aboutus.gif) no-repeat;
+          border-right: 1px solid #e4ded4;
+          text-indent: -9999px; }
+        body #page #header #nav .designers {
+          float: left;
+          display: block;
+          width: 56px;
+          height: 44px;
+          padding-right: 10px;
+          margin-left: 10px;
+          background: url(/images/nav_designers.gif) no-repeat;
+          border-right: 1px solid #e4ded4;
+          text-indent: -9999px; }
+        body #page #header #nav .portfolio {
+          float: left;
+          display: block;
+          width: 47px;
+          height: 44px;
+          padding-right: 10px;
+          margin-left: 10px;
+          background: url(/images/nav_portfolio.gif) no-repeat;
+          border-right: 1px solid #e4ded4;
+          text-indent: -9999px; }
+        body #page #header #nav .awards {
+          float: left;
+          display: block;
+          width: 43px;
+          height: 44px;
+          padding-right: 10px;
+          margin-left: 10px;
+          background: url(/images/nav_awards.gif) no-repeat;
+          border-right: 1px solid #e4ded4;
+          text-indent: -9999px; }
+        body #page #header #nav .contactus {
+          float: left;
+          display: block;
+          width: 61px;
+          height: 44px;
+          margin-left: 10px;
+          background: url(/images/nav_contactus.gif) no-repeat;
+          text-indent: -9999px; }
+    body #page #content #sidebar {
+      float: left;
+      width: 240px;
+      padding-left: 10px; }
+      body #page #content #sidebar img {
+        border-bottom: 10px solid #fff; }
+      body #page #content #sidebar .border {
+        position: absolute;
+        bottom: 0;
+        width: 240px;
+        height: 10px;
+        background: #fff; }
+    body #page #content #main {
+      float: left;
+      width: 450px;
+      padding: 0 30px 30px 30px; }
+      body #page #content #main #subnav {
+        margin-bottom: 30px; }
+        body #page #content #main #subnav ul {
+          margin: 0;
+          padding: 0; }
+          body #page #content #main #subnav ul li {
+            display: inline;
+            margin-right: 10px; }
+            body #page #content #main #subnav ul li a {
+              font-style: italic; }
+
+body.home {
+  margin-top: 8%;
+  background: none; }
+  body.home #page {
+    width: 100%; }
+    body.home #page #content #main {
+      width: 100%;
+      padding: 0; }
+      body.home #page #content #main .montage {
+        height: 199px;
+        background: url(/images/home_banner.jpg) repeat-x; }
+
+.albums {
+  z-index: 100; }
+  .albums .album {
+    float: left;
+    height: 120px; }
+    .albums .album h4 {
+      margin-top: 5px;
+      width: 90px;
+      padding-right: 5px;
+      font-size: 11px;
+      text-decoration: none;
+      margin-bottom: 0; }
+  .ie .albums .album {
+    margin-bottom: 5px; }
+    .ie .albums .album img {
+      border: 2px solid #BAB2A7;
+      margin-bottom: -8px; }
+
+.ie .albums.show #main a {
+  text-decoration: none; }
+  .ie .albums.show #main a img {
+    border: 2px solid #BAB2A7; }
+
+.ie7 .border {
+  display: none; }
+
+.ie6 .albums #main .albums {
+  width: 450px; }

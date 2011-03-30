@@ -7,6 +7,8 @@ gem 'rails', '3.0.5'
 
 gem 'mysql'
 gem 'rflickr', :require => "flickr"
+gem 'haml'
+gem 'bluecloth'
 
 # Use unicorn as the web server
 # gem 'unicorn'

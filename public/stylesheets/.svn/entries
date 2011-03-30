@@ -1,0 +1,68 @@
+8
+
+dir
+20
+svn://svn.unspace.ca/catlindesign/trunk/public/stylesheets
+svn://svn.unspace.ca/catlindesign
+
+
+
+2008-03-23T21:32:44.193442Z
+20
+shawn
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+471add9a-5435-0410-8ab9-8ddd3e737e4a
+
+lightbox.css
+file
+
+
+
+
+2008-01-17T22:31:59.000000Z
+8721048c7bf811480a50a5d4b0cfea72
+2008-01-17T22:56:02.998671Z
+19
+hcatlin
+has-props
+
+scaffold.css
+file
+
+
+
+
+2008-01-16T17:15:31.000000Z
+70e729685fb3ef28f5db5035a50567eb
+2007-07-24T00:00:06.448271Z
+7
+hcatlin
+
+sass
+dir
+
+application.css
+file
+
+
+
+
+2008-03-26T23:01:49.000000Z
+fc180555d245123d90a66135c9153267
+2008-03-23T21:32:44.193442Z
+20
+shawn
+

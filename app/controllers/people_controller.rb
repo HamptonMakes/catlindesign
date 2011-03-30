@@ -6,4 +6,11 @@ class PeopleController < ApplicationController
   def index
     redirect_to Person.find(:first)
   end
+  
+  def subnav
+    current_objects.collect do |person|
+      {:partial => "person", :locals => {:person => person}}
+    end
+  end
+  helper_method :subnav
 end
