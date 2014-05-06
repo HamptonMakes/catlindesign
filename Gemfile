@@ -11,6 +11,9 @@ gem 'mysql'
 gem 'rflickr', :require => "flickr"
 gem 'haml'
 gem 'bluecloth'
+gem 'sass'
+
+gem 'make_resourceful'
 
 # Use unicorn as the web server
 # gem 'unicorn'

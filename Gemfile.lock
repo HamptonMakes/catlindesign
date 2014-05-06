@@ -41,6 +41,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    make_resourceful (1.0.1)
     mime-types (1.25.1)
     multi_json (1.10.0)
     mysql (2.9.1)
@@ -72,6 +73,7 @@ GEM
       json (~> 1.4)
     rflickr (2006.02.01)
       mime-types (> 0.0.0)
+    sass (3.3.7)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -90,6 +92,8 @@ PLATFORMS
 DEPENDENCIES
   bluecloth
   haml
+  make_resourceful
   mysql
   rails (~> 3)
   rflickr
+  sass
