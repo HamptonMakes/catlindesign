@@ -3,23 +3,23 @@
   %head
     %title= @title || "catlin design"
     = stylesheet_link_tag "application"
-    <script type="text/javascript" src="/javascripts/prototype.js"></script>
-    <script type="text/javascript" src="/javascripts/scriptaculous.js?load=effects"></script>
-    <script type="text/javascript" src="/javascripts/lightbox.js"></script>
-    <script type="text/javascript" src="/javascripts/lightbox.js"></script>
-    <script type="text/javascript" src="/javascripts/css_browser_selector.js"></script>
-    <link rel="stylesheet" href="/stylesheets/lightbox.css" type="text/css" media="screen" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    = javascript_include_tag "application"
   %body
     #page
       #header
         #logo
-          %h1 Catlin Design
+          %a{:href=>"/"}
+            %h1 Catlin Design
         #nav
-          = link_to "About Us", area_pages_path(Area["information"]), {:class => "aboutus"}
-          = link_to "Designers", people_path, {:class => "designers"}
-          = link_to 'Portfolio', albums_path, {:class => "portfolio"}
-          = link_to 'Awards', area_pages_path(Area["awards"]), {:class => "awards"}
-          = link_to 'Contact Us', area_pages_path(Area["contact"]), {:class => "contactus"}
+          #button menu
+          #items
+            .links
+              = link_to "about us", area_pages_path(Area["information"]), {:class => "aboutus"}
+              = link_to "designers", people_path, {:class => "designers"}
+              = link_to 'portfolio', albums_path, {:class => "portfolio"}
+              = link_to 'awards', area_pages_path(Area["awards"]), {:class => "awards"}
+              = link_to 'contact us', area_pages_path(Area["contact"]), {:class => "contactus"}
         .clear
       #content{:class => page_class}
         #sidebar
