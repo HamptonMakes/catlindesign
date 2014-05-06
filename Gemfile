@@ -11,7 +11,7 @@ gem 'mysql'
 gem 'rflickr', :require => "flickr"
 gem 'haml'
 gem 'bluecloth'
-gem 'sass'
+gem 'sass-rails',   '~> 3.2.3'
 
 gem 'make_resourceful'
 
