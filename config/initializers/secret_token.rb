@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Catlindesign::Application.config.secret_token = '05ed37e494e6cb17a44d7588c0f608e82ce0c05fd8e0e1dd5fc32da90b62038bf7e97dccf8df3ebbdb20b9a15098c96f91eb531d278fe3c08d64c0627d894440'
+Catlindesign::Application.config.secret_token = '0dd6a44661215f2d1cf9942fc274e538cef7b98caa4237d688e92aa3dcabe7e543e1ab5522336935e0c6de30300da5770ccbac46ed531a779199f12e33c12e30'
