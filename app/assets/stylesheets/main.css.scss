@@ -191,7 +191,7 @@ li {
     p {
       line-height: 25px;
     }
-    #text {
+    #text.thin {
       @media screen and (min-width: $break) {
         width: 385px;
         float: left;
