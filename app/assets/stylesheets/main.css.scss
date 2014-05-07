@@ -249,7 +249,7 @@ body.home {
   z-index: 100;
   .album {
     float: left;
-    height: 120px;
+    height: 180px;
     padding: 10px 15px;
     h4 {
       margin-top: 5px;
@@ -261,7 +261,7 @@ body.home {
     }
   }
   &.show #text > a {
-    padding: 10px 10px 10px 0px;
+    padding: 0px 10px 10px 0px;
     display: inline-block;
   }
 }

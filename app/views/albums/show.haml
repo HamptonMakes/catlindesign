@@ -5,7 +5,7 @@
 
 - @album.photos.each do |photo|
   %a{:href => photo.url, :title => photo.title, :rel => "lightbox"}
-    = image_tag photo.url("s")
+    = image_tag photo.url("q")
     
 %br/
 %p
