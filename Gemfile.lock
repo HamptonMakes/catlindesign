@@ -32,6 +32,7 @@ GEM
     bluecloth (2.2.0)
     builder (3.0.4)
     erubis (2.7.0)
+    execjs (2.0.2)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -85,6 +86,9 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.39)
+    uglifier (2.5.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   ruby
@@ -97,3 +101,4 @@ DEPENDENCIES
   rails (~> 3)
   rflickr
   sass
+  uglifier
