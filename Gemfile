@@ -7,6 +7,7 @@ gem 'rails', '~>3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'uglifier'
 gem 'mysql'
 gem 'rflickr', :require => "flickr"
 gem 'haml'
