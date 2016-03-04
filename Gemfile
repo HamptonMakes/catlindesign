@@ -1,17 +1,16 @@
 source 'http://rubygems.org'
-ruby '1.8.7'
+ruby '2.2.3'
 
 
-gem 'rails', '~>3'
+gem 'rails', '~>4.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'uglifier'
 gem 'mysql'
-gem 'rflickr', :require => "flickr"
 gem 'haml'
-gem 'bluecloth'
+gem 'redcarpet'
 gem 'sass'
 
 gem 'make_resourceful'
@@ -35,6 +34,7 @@ gem 'make_resourceful'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end

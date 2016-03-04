@@ -1,6 +1,9 @@
 module ApplicationHelper
   def markdown(text)
-    BlueCloth.new(text).to_html.html_safe
+    renderer = Redcarpet::Render::HTML.new()
+    markdown = Redcarpet::Markdown.new(renderer)
+
+    markdown.render(text).html_safe
   end
   
   # Macro printing method for all sidebars sitewide.

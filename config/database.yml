@@ -1,3 +1,7 @@
+# mysqldump -u hcatlin --password="youareanidiot" -h txtgasm.cfwpo8uqtuve.us-east-1.rds.amazonaws.com catlindesign > tmp/dump.sql
+# cat tmp/dump.sql | mysql -u root catlindesign_development
+#
+
 # MySQL (default setup).  Versions 4.1 and 5.0 are recommended.
 #
 # Install the MySQL driver:

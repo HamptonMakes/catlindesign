@@ -4,7 +4,7 @@ class PeopleController < ApplicationController
   end
   
   def index
-    redirect_to Person.find(:first)
+    redirect_to Person.first
   end
   
   def subnav
