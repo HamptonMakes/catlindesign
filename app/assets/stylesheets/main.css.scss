@@ -107,14 +107,15 @@ li {
           float: right;
           color: white;
           background: $dark-beige;
-          padding: 10px;
+          padding: 5px 10px;
+          margin-top: 5px;
           font-size: 18px;
           cursor: pointer;
           border-radius: 2px;
           text-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
-          -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px inset,rgba(255, 255, 255, 0.5) 0 1px;
-          -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px inset,rgba(255, 255, 255, 0.5) 0 1px;
-          box-shadow: rgba(255, 255, 255, 0.3) 0 1px inset,rgba(255, 255, 255, 0.5) 0 1px;
+          -webkit-box-shadow: $beige 0 1px inset, darken($dark-beige, 10%) 0 1px;
+          -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px inset, darken($dark-beige, 10%) 0 1px;
+          box-shadow: rgba(255, 255, 255, 0.3) 0 1px inset, darken($dark-beige, 10%) 0 1px;
         }
       }
       .links {
@@ -142,8 +143,6 @@ li {
         }
         @media screen and (max-width: $break) {
           display: block;
-          // width: 100%;
-          // background: $dark-beige;
           color: white;
           padding: 5px 0px 5px 10px;
           font-size: 20px;
@@ -161,7 +160,7 @@ li {
       float: left;
       width: 240px;
       padding-left: 10px;
-      margin-top: 45px;
+      margin-top: 53px;
     }
     img {
       border-bottom: 10px solid white; 
@@ -237,6 +236,7 @@ body.home {
       padding: 0;
       padding-bottom: 60px;
       background: white;
+      margin: 0;
       .montage {
         height: 199px;
         background: url(/images/home_banner.jpg) repeat-x; 
