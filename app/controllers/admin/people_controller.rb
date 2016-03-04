@@ -1,4 +1,4 @@
-class Admin::PeopleController < ApplicationController
+class Admin::PeopleController < AdminController
   make_resourceful do
     actions :all
     
@@ -7,8 +7,9 @@ class Admin::PeopleController < ApplicationController
     end
   end
   
- private
-  def current_model
-    Person
+  private
+  
+  def object_parameters
+    params.require(:person).permit(:name, :position, :bio, :certifications)
   end
 end

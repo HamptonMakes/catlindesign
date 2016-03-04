@@ -38,10 +38,16 @@ Catlindesign::Application.routes.draw do
   end
   
   resources :people
-  resources :albums
+  resources :albums do
+    resources :pictures
+  end
   
+  get "admin" => "admin#index"
   namespace :admin do |admin|
     resources :people
+    resources :albums do
+      resources :pictures
+    end
     resources :areas do
       resources :pages
     end

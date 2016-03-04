@@ -1,0 +1,6 @@
+%h1 Photo from #{@picture.album.name}
+
+= image_tag @picture.photo.url(:large)
+  
+%p
+  = link_to 'Back', album_path(@picture.album)

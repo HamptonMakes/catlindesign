@@ -1,4 +1,4 @@
-class Admin::AreasController < ApplicationController
+class Admin::AreasController < AdminController
   make_resourceful do
     actions :index, :edit, :update
     

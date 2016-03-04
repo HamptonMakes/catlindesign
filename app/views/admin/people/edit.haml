@@ -1,8 +1,6 @@
-%h1== Editing #{@person.name}
+%h1 Editing #{@person.name}
 
-= error_messages_for :person
-
-- form_tag(admin_person_path(@person), :method => :put) do
+= form_tag(admin_person_path(@person), :method => :put) do
   = render :partial => "form"
   %p= submit_tag "Update"
 = link_to 'Show', @person

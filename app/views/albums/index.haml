@@ -3,7 +3,7 @@
 .albums
   - @albums.each do |album|
     .album
-      %a{:href => album_path(album.api_id)}
-        = image_tag album.photos.first.url("q")
-        %h4= album.title
+      %a{:href => album_path(album)}
+        = image_tag album.pictures.first.photo.url(:thumb)
+        %h4= album.name
   .clear      

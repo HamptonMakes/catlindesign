@@ -12,6 +12,9 @@ gem 'mysql'
 gem 'haml'
 gem 'redcarpet'
 gem 'sass'
+gem 'jquery-rails'
+
+gem 'paperclip', '~> 4.3'
 
 gem 'make_resourceful'
 

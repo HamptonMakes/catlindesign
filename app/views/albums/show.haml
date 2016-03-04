@@ -1,11 +1,11 @@
-%h2= @album.title
+%h2= @album.name
 
 %p
   %a{:href => "/albums"} Back to the Portfolio
 
-- @album.photos.each do |photo|
-  %a{:href => photo.url, :title => photo.title, :rel => "lightbox"}
-    = image_tag photo.url("q")
+- @album.pictures.each do |picture|
+  %a{:href => album_picture_path(@album, picture), :rel => "lightbox"}
+    = image_tag picture.photo.url(:thumb)
     
 %br/
 %p

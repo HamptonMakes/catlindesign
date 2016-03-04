@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title= @title || "catlin design"
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+  %body
+    %header 
+      %h1 Admin
+      = link_to "Portfolio", admin_albums_path
+      |
+      = link_to "People", admin_people_path
+      |
+      = link_to "Pages", admin_areas_path
+    = yield
