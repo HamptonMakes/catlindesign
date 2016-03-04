@@ -35,6 +35,6 @@ production:
   database: catlindesign
   host: txtgasm.cfwpo8uqtuve.us-east-1.rds.amazonaws.com
   username: hcatlin
-  password: mohawk1982
+  password: youareanidiot
   pool: 5
   timeout: 5000
