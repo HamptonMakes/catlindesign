@@ -8,4 +8,17 @@ class Admin::PagesController < AdminController
     
     belongs_to :area
   end
+  
+  def update 
+    @page = Page.find(params[:id])
+    @page.update_attributes(page_params)
+    redirect_to admin_area_pages_path(@area)
+  end
+  
+  private
+  
+  def page_params
+    params.require(:page).permit(:name, :body)
+  end
+  
 end
