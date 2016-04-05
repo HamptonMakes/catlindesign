@@ -7,9 +7,13 @@ class Admin::PeopleController < AdminController
     end
   end
   
+  def new 
+    @peron = Person.new
+  end
+  
   private
   
   def object_parameters
-    params.require(:person).permit(:name, :position, :bio, :certifications)
+    params.require(:person).permit(:name, :position, :bio, :certifications, :started_on)
   end
 end
