@@ -4,6 +4,7 @@
 
 <%= form_for [:admin, @album] do |f| %>
   <p>
+    <label>Album Title</label>
     <%= f.text_field "name" %>
   </p>
   <p>
@@ -12,16 +13,18 @@
 <% end %>
 
 <% @album.pictures.each do |picture| %>
-  <tr>
+  <div class="image-preview">
     <%= image_tag picture.photo.url(:thumb) %>
-    <td><%= link_to 'Destroy', [:admin, @album, picture], data: {confirm: 'Are you sure?'}, method: :delete %></td>
-  </tr>
+    <div class="delete"><%= link_to 'Destroy', [:admin, @album, picture], data: {confirm: 'Are you sure?'}, method: :delete %></div>
+  </div>
 <% end %>
-</table>
 
-<%= form_for @picture, url: admin_album_pictures_path(@album), html: { multipart: true } do |f| %>
-  <%= f.file_field :photo %>
-  <%= f.submit "Save Image" %>
-<% end %>
+<div class="add-new-images">
+  <p>Add New Images to Album</p>
+  <%= form_for @picture, url: admin_album_pictures_path(@album), html: { multipart: true } do |f| %>
+    <%= f.file_field :photo %>
+    <%= f.submit "Save Image" %>
+  <% end %>
+</div>
 
 <%= link_to 'Back', admin_albums_path %>
