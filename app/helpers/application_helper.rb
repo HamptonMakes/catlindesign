@@ -11,7 +11,7 @@ module ApplicationHelper
   def print_subnav
     sidebar_list = subnav
     if sidebar_list.any?
-      haml_tag :div, :id => "subnav" do
+      haml_tag :div, :class => "subnav" do
         haml_tag :ul do
           sidebar_list.each do |item|
             if item.is_a? Hash
