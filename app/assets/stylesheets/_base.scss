@@ -1,0 +1,27 @@
+
+body {
+  color: $dark-slate;
+  font-family: $sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+// HEADERS
+
+h1, h2, h3, h4 {
+  color: $slate;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+p {
+  line-height: 2em;
+}

@@ -1,0 +1,7 @@
+.text {
+  padding-top: 20px;
+  &.wide {
+    margin: auto;
+    width: $normal-width;
+  }
+}
