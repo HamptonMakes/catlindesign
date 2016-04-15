@@ -1,7 +1,8 @@
+// Don't use this page any more; use the pictures/show route
+// as we're showing an individual picture.
+
 %h2= @album.name
 
-%p
-  %a{:href => "/albums"} Back to the Portfolio
 
 - @album.pictures.each do |picture|
   %a{:href => album_picture_path(@album, picture), :rel => "lightbox"}
