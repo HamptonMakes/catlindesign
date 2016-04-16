@@ -1,7 +1,7 @@
 %h2 #{@picture.album.name}
 
 .main-image
-  = image_tag @picture.photo.url(:large)
+  = image_tag @picture.photo.url()
   
 .other-images
   - @picture.album.pictures.each do |picture|
