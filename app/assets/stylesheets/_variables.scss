@@ -2,7 +2,10 @@
 
 $slate: #95A1AA;
 $black: #111;
+$white: lighten($slate, 35%);
 $dark-slate: #383C40;
+
+$nav-highlight: lighten($slate, 30%);
 
 
 // WIDTHS

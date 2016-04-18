@@ -12,26 +12,40 @@ header {
     font-family: $serif;
     font-size: 18px;
     padding: 12px 0;
+    ul.items {
+      margin: auto;
+      padding-left: 0;
+      width: $normal-width;
+    }
     li {
       display: inline-block;
       text-align: center;
       width: 19%;
-      // &:first-of-type {
-      //   text-align: left;
-      // }
-      // &:last-of-type {
-      //   text-align: right;
-      // }
     }
     a {
-      color: white;
+      border-bottom: 2px solid $slate;
+      color: $white;
       display: inline-block;
       text-decoration: none;
     }
+    // This is for the highlighting of the menu items
+    body.people & a.people {
+       border-color: $nav-highlight;
+    }
+    body.albums &, body.pictures & {
+      a.albums {
+        border-color: $nav-highlight;
+      }
+    }
+    body.information & a.information {
+      border-color: $nav-highlight;
+    }
+    body.awards & a.awards {
+      border-color: $nav-highlight;
+    }
+    body.contact & a.contact {
+      border-color: $nav-highlight;
+    }
   }
-  ul.items {
-    margin: auto;
-    padding-left: 0;
-    width: $normal-width;
-  }
+  
 }
