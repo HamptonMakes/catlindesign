@@ -4,6 +4,6 @@
   - @albums.each do |album|
     .album
       %a{:href => album_picture_path(album, album.pictures.first)}
-        = image_tag album.pictures.first.photo.url(:thumb)
+        = image_tag album.pictures.first.photo.url(:large)
         .name= album.name
   .clear      
