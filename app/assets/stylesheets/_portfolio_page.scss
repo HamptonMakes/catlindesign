@@ -1,7 +1,37 @@
-.main-image {
-  display: inline-block;
-  max-width: 400px;
-  img {
-    width: 100%;
+body.pictures {
+  
+  .main-image {
+    display: inline-block;
+    margin-bottom: 40px;
+    // max-width: 100%;
+    vertical-align: top;
+    @include larger-than($break) {
+      max-width: 69%;
+      margin-right: 40px;
+    }
+    img {
+      animation-duration: 0.5s;
+      animation-name: fade-in;
+      width: 100%;
+    }
+  }
+  
+  .other-images {
+    display: inline-block;
+    @include larger-than($break) {
+      width: 25%;
+    }
+    a, img {
+      display: inline-block;
+    }
+    a {
+      width: 32%;
+      @include larger-than($break) {
+        width: 48%;
+      }
+    }
+    img {
+      width: 100%;
+    }
   }
 }
