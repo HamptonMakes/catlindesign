@@ -1,0 +1,28 @@
+header {
+  @include smaller-than($header-small-break) {
+    position: relative;
+    .menu-button {
+      color: $white;
+      cursor: pointer;
+      margin-bottom: 10px;
+      text-align: center;
+      text-transform: lowercase;
+    }
+    nav {
+      .menu-button {
+        display: block;
+      }
+      ul {
+        background: $slate;
+        display: none;
+        position: absolute;
+        width: 100%;
+      }
+      a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+  }
+}

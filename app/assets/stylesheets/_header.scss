@@ -12,6 +12,9 @@ header {
     font-family: $serif;
     font-size: 18px;
     padding: 16px 0 6px;
+    .menu-button {
+      display: none;
+    }
     ul.items {
       margin: auto;
       padding-left: 0;
@@ -20,16 +23,20 @@ header {
       }
     }
     li {
-      display: inline-block;
-      text-align: center;
-      width: 19%;
+      @include larger-than($header-small-break) {
+        display: inline-block;
+        text-align: center;
+        width: 19%;
+      }
     }
     a {
-      border-bottom: 2px solid $slate;
       color: $white;
-      display: inline-block;
       padding-bottom: 10px;
       text-decoration: none;
+      @include larger-than($header-small-break) {
+        border-bottom: 2px solid $slate;
+        display: inline-block;
+      }
       &:hover {
         color: #FFF;
       }
