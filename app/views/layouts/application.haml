@@ -4,7 +4,7 @@
     %title= @title || "catlin design"
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
-  %body
+  %body{class: page_type}
     %header
       .logo
         %a{:href=>"/"}
