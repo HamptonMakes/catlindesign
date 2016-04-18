@@ -23,7 +23,11 @@ ul, ol, li {
 }
 
 a {
+  @include transition(all 0.2s);
   color: $slate;
+  &:hover {
+    color: darken($slate, 10%);
+  }
 }
 
 p {

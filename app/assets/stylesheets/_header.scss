@@ -11,11 +11,13 @@ header {
     background: $slate;
     font-family: $serif;
     font-size: 18px;
-    padding: 12px 0;
+    padding: 16px 0 6px;
     ul.items {
       margin: auto;
       padding-left: 0;
-      width: $normal-width;
+      @include larger-than($break) {
+        width: $normal-width;
+      }
     }
     li {
       display: inline-block;
@@ -26,7 +28,11 @@ header {
       border-bottom: 2px solid $slate;
       color: $white;
       display: inline-block;
+      padding-bottom: 10px;
       text-decoration: none;
+      &:hover {
+        color: #FFF;
+      }
     }
     // This is for the highlighting of the menu items
     body.people & a.people {

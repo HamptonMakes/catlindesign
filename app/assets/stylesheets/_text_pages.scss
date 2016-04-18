@@ -1,7 +1,11 @@
 .content {
-  padding-top: 20px;
+  padding: 20px 20px 0px;
   margin: auto;
-  width: $normal-width;
+  @include larger-than($break) {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: $normal-width;
+  }
   .wide {
     
   }
@@ -10,10 +14,14 @@
     vertical-align: top;
   }
   .thin {
-    width: $normal-width - 200px;
+    width: 75%;
   }
   .subnav {
-    width: 150px;
+    width: 20%;
+    a {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
   }
   
   .byline {
