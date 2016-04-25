@@ -1,9 +1,13 @@
 body.home {
-  .montage {
-    background-image: url("/images/home_banner.jpg");
-    background-repeat: repeat-x;
-    height: 400px;
-    margin-top: 40px;
-    width: 100%;
+  .hero {
+    margin: 20px auto;
+    max-width: 450px;
+    padding: 0 20px;
+    // width: auto;
+    // height: auto;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
