@@ -1,0 +1,23 @@
+.album {
+  display: inline-block;
+  margin-bottom: 60px;
+  vertical-align: top;
+  @include larger-than($mobile-break) {
+    margin-right: 40px;
+    width: 42%;
+  }
+  @include larger-than($break) {
+    width: 27%;
+  }
+  a {  
+    text-decoration: none;
+  }
+  img {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .name {
+    font-size: 18px;
+    text-align: center;  
+  }
+}

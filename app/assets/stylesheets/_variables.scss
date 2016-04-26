@@ -1,0 +1,58 @@
+// COLORS
+
+$slate: #95A1AA;
+$black: #111;
+$white: lighten($slate, 32%);
+$dark-slate: #383C40;
+
+$nav-highlight: lighten($slate, 30%);
+
+
+// WIDTHS
+
+$mobile-break: 450px;
+$header-small-break: 500px;
+$break: 800px;
+
+$normal-width: 800px;
+
+
+// FONTS
+@import url(https://fonts.googleapis.com/css?family=Lora);
+$serif: "Lora", serif;
+$sans-serif: Helvetica, sans-serif;
+
+
+// MIXINS
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin larger-than($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin smaller-than($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+
+// ANIMATIONS
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

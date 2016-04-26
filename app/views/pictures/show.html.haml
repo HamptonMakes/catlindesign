@@ -1,6 +1,12 @@
-%h1 Photo from #{@picture.album.name}
+%h2 #{@picture.album.name}
 
-= image_tag @picture.photo.url(:large)
+.main-image
+  = image_tag @picture.photo.url()
   
-%p
-  = link_to 'Back', album_path(@picture.album)
+.other-images
+  - @picture.album.pictures.each do |picture|
+    %a{:href => album_picture_path(@picture.album, picture), :rel => "lightbox"}
+      = image_tag picture.photo.url(:thumb)
+  
+-# %p
+-#   %a{:href => "/albums"} Back to the Portfolio

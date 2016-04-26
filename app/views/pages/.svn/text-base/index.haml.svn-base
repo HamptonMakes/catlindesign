@@ -1,3 +1,0 @@
-%h2= @area.name
-%p
-  ~ markdown(@area.body)

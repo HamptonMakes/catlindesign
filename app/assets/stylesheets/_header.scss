@@ -1,0 +1,64 @@
+header {
+  .logo a {
+    background-image: image-url("/images/logo-small.gif");
+    background-repeat: no-repeat;
+    display: block;
+    height: 37px;
+    margin: 20px auto;
+    width: 208px;
+  }
+  nav {
+    background: $slate;
+    font-family: $serif;
+    font-size: 18px;
+    padding: 16px 0 6px;
+    .menu-button {
+      display: none;
+    }
+    ul.items {
+      margin: auto;
+      padding-left: 0;
+      @include larger-than($break) {
+        width: $normal-width;
+      }
+    }
+    li {
+      @include larger-than($header-small-break) {
+        display: inline-block;
+        text-align: center;
+        width: 19%;
+      }
+    }
+    a {
+      color: $white;
+      padding-bottom: 10px;
+      text-decoration: none;
+      @include larger-than($header-small-break) {
+        border-bottom: 2px solid $slate;
+        display: inline-block;
+      }
+      &:hover {
+        color: #FFF;
+      }
+    }
+    // This is for the highlighting of the menu items
+    body.people & a.people {
+       border-color: $nav-highlight;
+    }
+    body.albums &, body.pictures & {
+      a.albums {
+        border-color: $nav-highlight;
+      }
+    }
+    body.information & a.information {
+      border-color: $nav-highlight;
+    }
+    body.awards & a.awards {
+      border-color: $nav-highlight;
+    }
+    body.contact & a.contact {
+      border-color: $nav-highlight;
+    }
+  }
+  
+}
