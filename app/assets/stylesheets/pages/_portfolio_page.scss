@@ -1,9 +1,7 @@
 body.pictures {
-  
   .main-image {
     display: inline-block;
     margin-bottom: 40px;
-    // max-width: 100%;
     vertical-align: top;
     @include larger-than($break) {
       max-width: 69%;

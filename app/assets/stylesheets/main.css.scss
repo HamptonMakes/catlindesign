@@ -1,15 +1,13 @@
-@import "variables";
+@import "atoms/variables";
 
 /////////////////
 
-@import "admin";
+@import "components/base";
+@import "components/header";
+@import "components/small_header";
 
-
-@import "base";
-@import "header";
-@import "small_header";
-
-@import "home";
-@import "text_pages";
-@import "portfolio_index";
-@import "portfolio_page";
+@import "pages/admin";
+@import "pages/home";
+@import "pages/portfolio_index";
+@import "pages/portfolio_page";
+@import "pages/text_pages";
