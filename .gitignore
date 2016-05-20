@@ -6,3 +6,4 @@ old
 db/*.sqlite3
 log/*.log
 tmp/
+config/local_env.yml
