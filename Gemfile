@@ -14,7 +14,9 @@ gem 'redcarpet'
 gem 'sass'
 gem 'jquery-rails'
 
+# For uploading and storing photos
 gem 'paperclip', '~> 4.3'
+gem 'aws-sdk', '~> 1.6'
 
 gem 'make_resourceful'
 
