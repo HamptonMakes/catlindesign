@@ -79,7 +79,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   # Uploading images etc.
-  config.paperclip_defauls = {
+  config.paperclip_defaults = {
     storage: :s3,
     s3_credentials: {
       bucket:             ENV.fetch('S3_BUCKET_NAME'),
