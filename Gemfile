@@ -14,6 +14,8 @@ gem 'redcarpet'
 gem 'sass'
 gem 'jquery-rails'
 
+gem 'bcrypt', '~> 3.1.2'
+
 # For uploading and storing photos
 gem 'paperclip', '~> 4.3'
 gem 'aws-sdk', '~> 1.6'
