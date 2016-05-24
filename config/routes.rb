@@ -12,6 +12,14 @@ Catlindesign::Application.routes.draw do
   end
   
   get "admin" => "admin#index"
+  
+  # For logging in etc.
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+  
   namespace :admin do |admin|
     resources :people
     resources :users
