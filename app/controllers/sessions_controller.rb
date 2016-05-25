@@ -11,12 +11,16 @@ class SessionsController < ApplicationController
       redirect_to login_url, alert: "Incorrect username or password."
     end
   end
+  
+  def show
+    reset_session
+  end
 
   def destroy
     # puts "LOGGING OUT"
     # cookies.delete :_catlindesign_session
     reset_session
     # puts "Session user_id = " + session[:user_id]
-    redirect_to root_path
+    redirect_to logout_url
   end
 end

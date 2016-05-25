@@ -17,6 +17,7 @@ Catlindesign::Application.routes.draw do
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
+    get 'logout' => :show
     delete 'logout' => :destroy
   end
   
